@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+    <title>Cravez Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="imgs/logo4.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME </a></li>
+            <li><a href="about.html"> ABOUT </a></li>
+            <li><a href="menu.html"> MENU </a></li>
+            <li><a href="branches.html"> BRANCH </a></li>
+            <li><a href="contact.html"> CONTACT </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!---------- about content ----------->
+
+    <section class="about">
+      <div class="row">
+        <div class="about-col">
+          <h1>Welcome to the India's best Cakes and Ice-Cream parlour</h1>
+          <p>
+            Our Cravez is all about serving the tastiest "Cakes" and
+            "Ice-creams" to the people. We have different flavours of cakes and
+            ice-creams which are made of pure ingredients. We always tried and
+            served only the best quality food to our dear customers till now.
+            You can check our website to know more about the items we offer. As
+            our customers are loving our items so much so planned to add one
+            more item in our menu that is "Milkshakes". You will find the
+            different flavoured milkshakes in our website. We also have branches
+            in Hyderabad, Kukatpally and Begumpet in India. That's why we also
+            provide online delivery to the customers. So, right now go and check
+            our menu page and order your favourite item. We will ensure to you
+            to delivery to your location within short time.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="imgs/about_2.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!---------- footer -------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>For more information and details you can contact us.</p>
+
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </section>
+
+    <!--------JavaScript  for Toggle Menu ----->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
